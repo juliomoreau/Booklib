@@ -1,0 +1,255 @@
+/*Css principal*/
+/*Body*/
+
+html, body {
+	height:100%;
+	margin:0;
+}
+
+body{
+	
+	background-color: #d8dfe2;
+	color:#ffffff;
+	font-family: "brand-font-regular", Roboto,sans-serif;
+	font-size: 13px;
+	word-wrap:break-word;
+}
+
+@font-face {
+    font-family: 'brand-font-regular'; 
+    src: url('../fonts/AvenirFree/AvenirLTStd-Roman.otf'); 
+}
+
+h1{
+	text-transform: uppercase;
+	font-size : 15px;
+}
+
+
+/*Div*/
+div.zone{
+	z-index:0;	
+	top:100px;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 70px;
+}
+
+div#panneau-gauche{
+	z-index: 1;
+	width:25%;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+div#content{
+	z-index: 1;
+	left:4%;
+	width:40%;
+}
+
+/*Page catégories*/
+.categ{
+	background-color: white;
+	padding: 5px;
+	margin-bottom: 10px;
+	box-shadow:0 2px 2px #8BC34A;
+	width:100px;
+	max-width: 80%;
+	border: 1px solid #8BC34A;
+}
+
+.categ li{
+	max-width: 100%;
+	padding-left: 0px;
+}
+.categ:hover{
+	background-color: #8BC34A;
+}
+
+#cat .contenu ul{
+	list-style-type: none;
+	padding-left: 5%;
+}
+
+#cat .contenu ul a{
+	color:#212121;
+	text-decoration: none;
+	box-shadow: 0 2px 2px #8BC34A;
+}
+#cat{
+	left:30%;
+	width:35%;
+}
+
+#cat .contenu ul a:hover{
+	cursor: pointer
+}
+
+
+
+div#panneau-droite{
+	float: right;
+	right:2%;
+	z-index: -1;
+	width:23%;
+	margin-right:0.5%;
+	margin-bottom: 3%;
+}
+ /*Titre*/
+
+.titre{
+	background-color: #ffffff;
+	padding:1%;
+	color:#212121;
+	text-align: center;
+	box-shadow: 0 2px 2px;
+	border-bottom: 2px solid #d8dfe2;
+}
+
+#content .titre h1{
+	font-size: 30px;
+}
+/*Contenu*/
+.contenu{
+	box-shadow: 0 2px 2px;
+	background-color: #ffffff;
+	color:#757575;
+	padding:2%;
+	text-align: justify;
+}
+
+.contenu ul {
+	padding-left: 10%;
+}
+.contenu img#logo{
+	padding-left:15%;
+	max-width: 80%;
+	height: auto;
+}
+
+
+#content .contenu{
+	font-size: 16px;
+}
+
+
+/*Contact : facebook etc...*/
+.contact {
+	box-shadow: 0 2px 2px;
+	background-color: #ffffff;
+	color:#757575;
+	padding:10px;
+	padding-top: 30px;
+	border-top: 2px solid #d8dfe2;
+}
+
+
+/*bloc pages/catégories */
+
+#spe {
+	width:70%;
+	left:15%;
+}
+
+/*Tableaux*/
+
+table {
+	box-shadow: 0 2px 2px #8BC34A;
+	border:1px solid white;
+	width:100%;
+	border-collapse: collapse;
+	color: black;
+	max-width: 100%;
+}
+
+thead tr{
+	background-color:#8BC34A;
+	width: auto;
+
+}
+
+th{
+	text-align: center;
+	color:white;
+	width: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+}
+
+tbody tr {
+	background-color: #fff;
+	transition: background-color 0.5s linear;
+	width: auto;
+}
+
+tbody tr:hover{
+	background-color: #AFCD8B;
+	transition: background-color 0.2s linear;
+
+}
+
+td{
+	text-align: center;
+	width: auto;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.num{
+
+}
+
+.cover img{
+	height: 160px;
+	width:100px;
+	max-width: 100%;
+}
+
+.title-book{
+
+}
+
+.author{
+
+}
+
+.date{
+
+}
+
+.resume img{
+	height: 40px;
+	width:auto;
+
+}
+
+.order img {
+	height: 20px;
+	width: auto;
+	max-width: 100%;
+}
+/*Footer*/
+footer {
+	z-index: 50;
+	position: relative;
+	background-image: url(../img/bg-footer.jpg);
+	width:99.3%;
+	text-align: center;
+	padding: 10px;
+	padding-right: 0px;
+	margin-right: 0px;
+	left:0%;
+	bottom:0;
+	margin-top:60px;
+	margin-bottom: 0%;
+}
+
+@media screen (max-device-width:768px) {
+	footer{
+		display: none;
+		visibility: hidden;
+	}
+}

@@ -1,0 +1,117 @@
+/*Header*/
+
+/* Image de couverture*/
+#GrandeIntro {
+	height:100%;
+	background:url(../img/header_img.jpg) no-repeat;
+	background-size:cover;
+}
+
+/*Enveloppe du contenu*/
+#siteWrapper {
+	margin-top:-40px;
+}
+#siteWrapper header.fixed {
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+/*Barre de menu*/
+
+header{
+	z-index: 50;
+	width:100%;
+	top:0px;
+	height:40px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right:0px;
+	background-color:#8BC34A;
+	box-shadow: 5px 5px 5px #8BC34A;
+} 
+
+/*Header listes*/
+
+header ul{
+	padding-left: 0px;
+	margin:0px;
+	width: 100%;
+	cursor:pointer;
+}
+
+header ul li{
+
+	margin-left: -5px;
+	position:relative;
+	display:inline-block;
+	opacity:0.7;
+	color: white;
+	margin-bottom: 0%;
+	text-decoration: none;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+header ul a:hover li{
+	border-bottom: 3px solid white;
+	opacity:1;
+	background-color: #689F38;
+	-webkit-transition: all 0.2s;
+	-moz-transition:all 0.2s;
+	-o-transition:all 0.2s;
+}
+
+
+header ul a:hover li h1{
+	font-weight: bold;
+	-webkit-transition: all 0.2s;
+	-moz-transition:all 0.2s;
+	-o-transition:all 0.2s;
+}
+
+
+
+/*Focus (surlignage) sur chaque page*/
+header ul a.focus li{
+	border-bottom: 3px solid white;
+	opacity:1;
+	background-color: #689F38;
+	-webkit-transition: all 0.2s;
+	-moz-transition:all 0.2s;
+	-o-transition:all 0.2s;
+}
+
+/*Images header*/
+header ul a li img#home{
+	position: relative;
+	padding-right: 50px;
+	padding-left:50px;
+	margin-right:20px;
+	margin-left: 20px;
+	vertical-align: -80%;
+	height: 40px;
+	width: auto;
+}
+
+
+ /*Champ de recherche header*/
+header ul li input#recherche{
+	text-indent: 25px;
+	padding:3px;
+	background-position: 2px 3px;
+	font-family: 'brand-font-regular';
+	background-image:url(../img/loupe.png);
+	background-size: 17px 17px;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+
+header ul li input#recherche:hover{
+	border: 3px solid grey;
+}
+
+header ul li input#recherche:focus{
+	border: 3px solid grey;
+}

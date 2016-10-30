@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Booklib | Les livres en libre service</title>
+	<link rel="stylesheet"  type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/formulaire.css">
+	<link rel="stylesheet"  type="text/css" href="css/header.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+	<div id="GrandeIntro">
+	</div>
+	<div id="siteWrapper">
+		<header class="principal">
+			<ul>
+				<a href="index.html#siteWrapper"><li><img src="img/home.png" id="home"></li></a>
+				<a href="categories.html#siteWrapper"><li><h1>Genres</h1></li></a>
+				<a href="ajouterlivre.html#siteWrapper"><li><h1>Ajouter un livre</h1></li></a>
+				<a href="contact.html#siteWrapper"><li><h1>Contact</h1></li></a>
+				<li><input type="search" placeholder="Rechercher..." id="recherche"></li>
+			</ul>
+		</header>
+		<div id="ajout" class="zone">
+			<div class="titre">
+				<h1>Vos informations personnelles pour la commande</h1>
+			</div>
+			<div class="contenu">
+				<form action="lol.php" method="POST">
+					<h1><img src="img/formulaire/profile.png" >Prénom & Nom<div class="champ"><input type="text" placeholder="Yann Barthès" required></div></h1>
+					<h1><img src="img/formulaire/email.png" >E-mail <div class="champ"><input type="email" placeholder="Ex: xyz@mail.com" required></h1>
+					<h1><img src="img/formulaire/profile.png" >Adresse<div class="champ"><input type="text" placeholder="2 rue de la digue" required></div></h1>
+					<h1><img src="img/formulaire/profile.png" >Ville<div class="champ"><input type="text" placeholder="Lille" required></div></h1>
+					<h1><img src="img/formulaire/profile.png" >Code postal<div class="champ"><input type="text" placeholder="59800" required></div></h1>
+					<div class="submit"><input type="submit" class="button" value="Commander"></div>
+				</form>	
+
+			</div>
+		</div>
+	</div>
+	<footer>
+		Site créé par Jules Moreau
+	</footer>
+
+	<script type='text/javascript' src='js/scripts.js'></script>
+</body>
+</html>

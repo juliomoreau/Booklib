@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Booklib | Les livres en libre service</title>
+	<link rel="stylesheet"  type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/formulaire.css">
+	<link rel="stylesheet"  type="text/css" href="css/header.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+	<div id="GrandeIntro">
+	</div>
+
+	<div id="siteWrapper">
+		<header class="principal">
+			<ul>
+				<a href="index.html#siteWrapper"><li ><img src="img/home.png" id="home"></li></a>
+				<a href="categories.html#siteWrapper"><li><h1>Genres</h1></li></a>
+				<a href="ajouterlivre.html#siteWrapper" class="focus"><li><h1>Ajouter un livre</h1></li></a>
+				<a href="contact.html#siteWrapper"><li><h1>Contact</h1></li></a>
+				<li><input type="search" placeholder="Rechercher..." id="recherche"></li>
+			</ul>
+		</header>
+		<div id="ajout" class="zone">
+			<div class="titre">
+				<h1>Envie de nous donner un livre ?</h1>
+			</div>
+			<div class="contenu">
+				<form action="lol.php" method="POST">
+					<h1><img src="img/formulaire/profile.png" >Prénom & Nom<div class="champ"><input type="text" placeholder="Yann Barthès" required></div></h1>
+					<h1><img src="img/formulaire/profile.png" >Titre <div class="champ"><input type="text" placeholder="Ex: Phèdre" required></h1>
+					<h1><img src="img/formulaire/profile.png" >Auteur <div class="champ"><input type="text" placeholder="Ex: Racine" required></h1>
+					<h1><img src="img/formulaire/calendar.png" >Année de parution<div class="champ"><input type="text" placeholder="Ex: 1677"></h1>
+					<h1>
+						<img src="img/formulaire/list.png" >Genre 
+						<span class="champ" id="dropdown">
+							<select class="dropdown-select" required>
+								<option>Policier</option>
+								<option>Fantastique</option>
+								<option>Bande-dessinée</option>
+								<option>Manga</option>
+								<option>Autres</option>
+							</select>
+						</span>
+					</h1>
+					<h1>
+						<img src="img/formulaire/rate.png" >Note  
+						<div class="note">
+							<a href="#5" title="Donner 5 étoiles">☆</a>
+							<a href="#4" title="Donner 4 étoiles">☆</a>
+							<a href="#3" title="Donner 3 étoiles">☆</a>
+							<a href="#2" title="Donner 2 étoiles">☆</a>
+							<a href="#1" title="Donner 1 étoile">☆</a>
+						</div>
+					</h1>
+					<h1><img src="img/formulaire/image.png" >Ajouter une image  <div class="champ"><input type="file" id="file" name="couverture" ><label for="file"> Parcourir</label><input type="hidden" name="MAX_FILE_SIZE" value="100000" ></div></h1>
+					<h1>
+						<img src="img/formulaire/truck.png" >Lieu de la dépose/envoi 
+						<span class="champ" id="dropdown">
+							<select class="dropdown-select" required>
+								<option>7C rue de Boulogne 59000 Lille</option>
+								<option>18 rue Solférino 59000 Lille</option>
+							</select>
+						</span>
+					</h1>
+					<h1><img src="img/formulaire/bulle.png" >Votre avis <div class="champ" id="avis"><textarea class="zonetexte" placeholder="Votre avis sur le livre"></textarea></div></h1>
+					<div class="submit"><input type="submit" class="button" value="Ajouter ce livre"></div>
+				</form>	
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		Site créé par Jules Moreau
+	</footer>
+
+	<script type='text/javascript' src='js/scripts.js'></script>
+</body>
+</html>

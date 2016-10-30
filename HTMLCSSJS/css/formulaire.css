@@ -1,0 +1,197 @@
+/*Css du formulaire pour ajouter un livre*/
+#ajout{
+	left:30%;
+	width:35%;
+}
+
+form{
+	color:#212121;
+}
+
+form h1{
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+form h1 img{
+	height:40px;
+	width: auto;
+	padding-right:20px;
+}
+.champ {
+	display: block;
+	padding-left: 60px;
+	padding-top: 20px;
+}
+
+input {
+	z-index: 10;
+	font-family: 'brand-font-regular';
+	box-shadow: 0 2px 2px #8BC34A;
+	padding: 5px;
+	border: 1px solid #8BC34A;
+	background-image: none;
+
+}
+
+ input:hover{
+	border: 3px solid #8BC34A;
+	cursor: pointer;
+}
+ input:focus{
+ 	border: 3px solid #8BC34A;	
+ }
+
+ /*Notation avec les étoiles*/
+.note{
+	padding-right:67%;
+	padding-top:20px;
+	margin-bottom: 10px;
+}
+
+.note a {
+	font-weight: bold;
+	font-size:25px;
+	color: #212121;
+	float: right;
+	text-decoration: none;
+	transition: color .4s;
+}
+.note a:hover, .note a:focus, .note a:hover ~ a, .note a:focus ~ a {
+	color: #8BC34A;
+   	cursor: pointer;
+}
+
+.submit{
+	padding-left: 200px;
+}
+
+.button{
+	z-index: 2;
+	background-color: white;
+	border: 1px solid #8BC34A;
+}
+.button:hover{
+	background-color: #8BC34A;
+}
+
+#avis{
+	padding-left: 0%;
+}
+
+
+
+.zonetexte {
+	font-family: Roboto;
+	font-size:14px;
+	width:92%;
+	height:150px;
+	padding: 10px;
+	box-shadow: 0 2px 2px #8BC34A;
+}
+
+/*Menu déroulant du select*/
+
+select {
+	text-transform: capitalize;
+}
+#dropdown{
+
+}
+.dropdown-select{
+	padding: 5px;
+	font-family: Roboto;
+	background-color: #fff;
+}
+@supports (pointer-events: none) and ((-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none)) {
+
+	#dropdown{
+        vertical-align: middle;
+        width: 20%
+        padding:5px;
+	}
+
+	.dropdown-select{
+		padding-right: 20px;
+		box-shadow: 0 2px 2px #8BC34A; 
+		border: 1px solid #8BC34A;
+		-webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; 
+	}
+
+	.dropdown-select:hover, .dropdown-select:focus{
+		border: 3px solid #8BC34A;
+	}
+
+    #dropdown::after {
+        content: "";
+        position: relative;
+        pointer-events: none;
+    }
+    #dropdown::after { /*  Petite flèche */
+        content: "\25BC";
+        margin: 0;
+        padding: 0;
+        top:0px;
+        right:28px;
+        font-size: 14px;
+        color: #8BC34A;
+    }
+}
+
+/*Bouton Ajout image*/
+
+input[type="file"]{
+	visibility: hidden;
+	display: none;
+}
+
+input+label{
+	font-size: 13px;
+	z-index: 10;
+	text-transform: capitalize;
+	font-weight: normal;
+	font-family: Roboto;
+	box-shadow: 0 2px 2px #8BC34A;
+	padding: 5px;
+	border: 1px solid #8BC34A;
+	background-image: none;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+input+label:hover{
+	border: 3px solid #8BC34A;
+	cursor: pointer;
+	background-color: #8BC34A;
+}
+
+
+
+/*Zone de texte*/
+
+textarea{
+	border: 1px solid #8BC34A;
+	box-shadow: 0 2px 2px #8BC34A;
+
+}
+
+textarea:hover, textarea:focus{
+		border: 3px solid #8BC34A;
+}
+
+/*Logo réseaux sociaux contact*/
+
+.contact h1{
+	color:#212121;
+	padding-bottom: 20px;
+}
+
+.contact a{
+	padding-right: 20px;
+}
+
+.contact img{
+	height:40px;
+	width: auto;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Booklib | Les livres en libre service</title>
+	<link rel="stylesheet"  type="text/css" href="css/main.css">
+	<link rel="stylesheet"  type="text/css" href="css/header.css">
+	<link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+
+
+  <div id="GrandeIntro"></div>
+
+  <div id="siteWrapper">
+
+	<header class="principal">
+    <ul>
+      <a href="index.html#siteWrapper" ><li ><img src="img/home.png" id="home"></li></a>
+      <a href="categories.html#siteWrapper" class="focus"><li><h1>Genres</h1></li></a>
+      <a href="ajouterlivre.html#siteWrapper"><li><h1>Ajouter un livre</h1></li></a>
+      <a href="contact.html#siteWrapper"><li><h1>Contact</h1></li></a>
+      <li><input type="search" placeholder="Rechercher..." id="recherche"></li>
+    </ul>
+	</header>
+
+
+	<div id="spe" class="zone">
+		<div class="titre">
+			<h1>Policier</h1>
+		</div>
+		<div class="contenu">
+			<table>
+            	<thead>
+                	<tr>
+                    	<th>#</th>
+                    	<th>Couverture</th>
+                    	<th>Titre</th>
+                        <th>Auteur</th>
+                        <th>Date de publication</th>
+           				<th>Résumé</th>
+                        <th>Avis de nos internautes</th>
+                        <th>Nombre en stock</th>
+                        <th>Commander le livre</th>
+                    </tr>
+               	</thead>
+               	<tbody>
+               		<tr>
+               			<td class="num">1</td>
+               			<td class="cover"><img src="img/covers/nympheas_noirs.jpg"></td>
+               			<td class="title-book">Nymphéas noirs</td>
+               			<td class="author">Michel Bussi</td>
+               			<td class="date">2011</td>
+               			<td class="resume"><a href="http://www.babelio.com/livres/Bussi-Nympheas-noirs/384822" target=_blank><img src="img/Icones/newspaper.png"></a></td>
+               			<td class="avis">4,5 ☆</td>
+               			<td class="stock">3</td>
+               			<td class="order">
+               				<form name="form1" action="commander.html#siteWrapper" method="GET"> <!-- Permet de récuper le nom du livre dans l'URL de la page commander !-->
+               					<input type="hidden" name="livre" value="">
+               					<a href="#" onclick="forms['form1'].livre.value='Nymphéas noirs';forms['form1'].submit();"><img src="img/formulaire/truck.png" ></a>
+               				</form>
+               			</td>
+               		</tr>
+               		<tr>
+               			<td class="num">2</td>
+               			<td class="cover"><img src="img/covers/da_vinci_code.jpg"></td>
+               			<td class="title-book">Da Vinci Code</td>
+               			<td class="author">Dan Brown</td>
+               			<td class="date">2009</td>
+               			<td class="resume"><a href="http://www.babelio.com/livres/Brown-Da-Vinci-Code/4395" target=_blank><img src="img/Icones/newspaper.png"></a></td>
+               			<td class="avis">4,1 ☆</td>
+               			<td class="stock">12</td>
+               			<td class="order">
+               				<form name="form1" action="commander.html#siteWrapper" method="GET"> <!-- Permet de récuper le nom du livre dans l'URL de la page commander !-->
+               					<input type="hidden" name="livre" value="">
+               					<a href="#" onclick="forms['form1'].livre.value='Da Vinci Code';forms['form1'].submit();"><img src="img/formulaire/truck.png" ></a>
+               				</form>
+               			</td>
+               		</tr>
+
+
+               	</tbody>
+              </table>
+		</div>
+	</div>
+</div>
+
+<script type='text/javascript' src='js/scripts.js'></script>
+
+
+
+
+	<footer>
+		Site créé par Jules Moreau
+	</footer>
+</body>
+</html>
